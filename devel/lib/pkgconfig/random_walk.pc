@@ -1,0 +1,8 @@
+prefix=/home/maithili/ROSdemo/devel
+
+Name: random_walk
+Description: Description of random_walk
+Version: 0.0.0
+Cflags: -I/home/maithili/ROSdemo/src/random_walk/include
+Libs: -L/home/maithili/ROSdemo/devel/lib 
+Requires: roscpp rospy std_msgs geometry_msgs sensor_msgs
