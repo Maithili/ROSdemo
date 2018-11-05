@@ -35,10 +35,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maithili/ROSdemo/src
+CMAKE_SOURCE_DIR = /home/maithili/demo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maithili/ROSdemo/build
+CMAKE_BINARY_DIR = /home/maithili/demo/build
 
 # Utility rule file for run_tests.
 
@@ -57,6 +57,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/maithili/ROSdemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/maithili/ROSdemo/src /home/maithili/ROSdemo/src /home/maithili/ROSdemo/build /home/maithili/ROSdemo/build /home/maithili/ROSdemo/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/maithili/demo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/maithili/demo/src /home/maithili/demo/src /home/maithili/demo/build /home/maithili/demo/build /home/maithili/demo/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 

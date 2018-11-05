@@ -35,10 +35,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maithili/ROSdemo/src
+CMAKE_SOURCE_DIR = /home/maithili/demo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maithili/ROSdemo/build
+CMAKE_BINARY_DIR = /home/maithili/demo/build
 
 # Utility rule file for clean_test_results.
 
@@ -46,7 +46,7 @@ CMAKE_BINARY_DIR = /home/maithili/ROSdemo/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/python /opt/ros/indigo/share/catkin/cmake/test/remove_test_results.py /home/maithili/ROSdemo/build/test_results
+	/usr/bin/python /opt/ros/indigo/share/catkin/cmake/test/remove_test_results.py /home/maithili/demo/build/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -61,6 +61,6 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
-	cd /home/maithili/ROSdemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/maithili/ROSdemo/src /home/maithili/ROSdemo/src /home/maithili/ROSdemo/build /home/maithili/ROSdemo/build /home/maithili/ROSdemo/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/maithili/demo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/maithili/demo/src /home/maithili/demo/src /home/maithili/demo/build /home/maithili/demo/build /home/maithili/demo/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

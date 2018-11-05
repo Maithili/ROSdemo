@@ -1,8 +1,0 @@
-prefix=/home/maithili/ROSdemo/devel
-
-Name: randomWalk
-Description: Description of randomWalk
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/maithili/ROSdemo/devel/lib 
-Requires: roscpp rospy std_msgs geometry_msgs

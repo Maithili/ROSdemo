@@ -35,10 +35,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maithili/ROSdemo/src
+CMAKE_SOURCE_DIR = /home/maithili/demo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maithili/ROSdemo/build
+CMAKE_BINARY_DIR = /home/maithili/demo/build
 
 # Utility rule file for std_msgs_generate_messages_lisp.
 
@@ -53,10 +53,10 @@ random_walk/CMakeFiles/std_msgs_generate_messages_lisp.dir/build: std_msgs_gener
 .PHONY : random_walk/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 
 random_walk/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	cd /home/maithili/ROSdemo/build/random_walk && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/maithili/demo/build/random_walk && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : random_walk/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 
 random_walk/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend:
-	cd /home/maithili/ROSdemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/maithili/ROSdemo/src /home/maithili/ROSdemo/src/random_walk /home/maithili/ROSdemo/build /home/maithili/ROSdemo/build/random_walk /home/maithili/ROSdemo/build/random_walk/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/maithili/demo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/maithili/demo/src /home/maithili/demo/src/random_walk /home/maithili/demo/build /home/maithili/demo/build/random_walk /home/maithili/demo/build/random_walk/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : random_walk/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
 

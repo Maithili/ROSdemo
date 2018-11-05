@@ -38,8 +38,12 @@ include_directories(
 )
 
 ## Declare a C++ executable
-add_executable(${PROJECT_NAME} src/random_walk.cpp)
-add_dependencies(${PROJECT_NAME} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(${PROJECT_NAME}
-  ${catkin_LIBRARIES}
-)
+add_executable(talker src/random_walk_talker.cpp)
+target_link_libraries(talker ${catkin_LIBRARIES})
+add_dependencies(talker ${catkin_EXPORTED_TARGETS})
+
+
+add_executable(listener src/random_walk_listener.cpp)
+target_link_libraries(listener ${catkin_LIBRARIES})
+add_dependencies(listener ${catkin_EXPORTED_TARGETS})
+
