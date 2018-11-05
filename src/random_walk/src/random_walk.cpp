@@ -8,29 +8,38 @@ int main(int argc, char **argv)
   geometry_msgs::Twist velocity;
 
   RandomWalk *random_walk_object = new RandomWalk(n);
-  random_walk_object->danger_ = false;
+  random_walk_object->danger_ = true;
+  ros::Subscriber sub = n.subscribe("/base_scan", 100, &RandomWalk::ObstacleCallback, random_walk_object);
+  ros::Publisher walk = n.advertise<geometry_msgs::Twist>("/cmd_vel", 100);
 
-  ros::Subscriber sub = n.subscribe("/base_scan", 1000, &RandomWalk::ObstacleCallback, random_walk_object);
-  ros::Publisher walk = n.advertise<geometry_msgs::Twist>("/cmd_vel", 1000);
-  
-  float omega = 0.1;
+  float omega = 0.3;
   float speed = 1.0;
-  if (random_walk_object->danger_)
+  ros::CallbackQueue my_callback_queue;
+  n.setCallbackQueue(&my_callback_queue);
+  ros::Rate loop_rate(10);   
+
+  while (ros::ok())
   {
-    ROS_INFO("Turning!!!");
-    velocity.angular.z = omega;
-    velocity.linear.x = 0.0;
-    walk.publish(velocity);
-    sleep(rand()*0.03);
-    velocity.angular.z = 0.0;
-    walk.publish(velocity);
+    if (random_walk_object->danger_)
+    {
+      ROS_INFO("Turning!!!");
+      velocity.angular.z = omega;
+      velocity.linear.x = 0.0;
+      walk.publish(velocity);
+    }
+    else
+    {
+      ROS_INFO("Moving!!!");
+      velocity.linear.x = speed;
+      velocity.angular.z = 0.0;
+      walk.publish(velocity);
+    }
+    ros::spinOnce();
+    loop_rate.sleep();
+    // ros::spin();
+    // my_callback_queue.callOne(ros::WallDuration());
   }
-  else
-  {
-    ROS_INFO("Moving!!!");
-    velocity.linear.x = speed;
-    walk.publish(velocity);
-  }
+
   ros::spin();
   return 0;
 }
