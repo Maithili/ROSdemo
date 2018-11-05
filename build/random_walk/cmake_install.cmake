@@ -1,8 +1,8 @@
-# Install script for directory: /home/maithili/demo/src/random_walk
+# Install script for directory: /home/maithili/ROSdemo/src/random_walk
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/maithili/demo/install")
+  set(CMAKE_INSTALL_PREFIX "/home/maithili/ROSdemo/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/maithili/demo/build/random_walk/catkin_generated/installspace/random_walk.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/maithili/ROSdemo/build/random_walk/catkin_generated/installspace/random_walk.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/random_walk/cmake" TYPE FILE FILES
-    "/home/maithili/demo/build/random_walk/catkin_generated/installspace/random_walkConfig.cmake"
-    "/home/maithili/demo/build/random_walk/catkin_generated/installspace/random_walkConfig-version.cmake"
+    "/home/maithili/ROSdemo/build/random_walk/catkin_generated/installspace/random_walkConfig.cmake"
+    "/home/maithili/ROSdemo/build/random_walk/catkin_generated/installspace/random_walkConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/random_walk" TYPE FILE FILES "/home/maithili/demo/src/random_walk/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/random_walk" TYPE FILE FILES "/home/maithili/ROSdemo/src/random_walk/package.xml")
 endif()
 

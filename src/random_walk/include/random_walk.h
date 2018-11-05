@@ -4,6 +4,7 @@
 
 #include <ros/ros.h>
 #include <sensor_msgs/LaserScan.h>
+#include <sensor_msgs/Image.h>
 #include <geometry_msgs/Twist.h>
 #include <algorithm>
 #include <ros/callback_queue.h>

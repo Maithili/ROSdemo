@@ -1,2 +1,2 @@
 random_walk
--DCATKIN_DEVEL_PREFIX=/home/maithili/demo/devel -DCMAKE_INSTALL_PREFIX=/home/maithili/demo/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/maithili/ROSdemo/devel -DCMAKE_INSTALL_PREFIX=/home/maithili/ROSdemo/install -G Unix Makefiles

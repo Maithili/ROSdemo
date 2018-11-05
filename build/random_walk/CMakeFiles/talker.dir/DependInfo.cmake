@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/maithili/demo/src/random_walk/src/random_walk_talker.cpp" "/home/maithili/demo/build/random_walk/CMakeFiles/talker.dir/src/random_walk_talker.cpp.o"
+  "/home/maithili/ROSdemo/src/random_walk/src/random_walk_talker.cpp" "/home/maithili/ROSdemo/build/random_walk/CMakeFiles/talker.dir/src/random_walk_talker.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -21,7 +21,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "/home/maithili/demo/src/random_walk/include"
+  "/home/maithili/ROSdemo/src/random_walk/include"
   "/opt/ros/indigo/include"
   )
 set(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

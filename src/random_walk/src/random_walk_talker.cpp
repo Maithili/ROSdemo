@@ -25,7 +25,7 @@ int main(int argc, char **argv)
       velocity.angular.z = omega;
       velocity.linear.x = 0.0;
       walk.publish(velocity);
-      ros::Rate delayrate(rand()*0.1+50); 
+      ros::Rate delayrate(rand()*0.1); 
       delayrate.sleep();
       // velocity.angular.z = 0.0;
       // walk.publish(velocity);

@@ -35,10 +35,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maithili/demo/src
+CMAKE_SOURCE_DIR = /home/maithili/ROSdemo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maithili/demo/build
+CMAKE_BINARY_DIR = /home/maithili/ROSdemo/build
 
 # Utility rule file for doxygen.
 
@@ -57,6 +57,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/maithili/demo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/maithili/demo/src /home/maithili/demo/src /home/maithili/demo/build /home/maithili/demo/build /home/maithili/demo/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/maithili/ROSdemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/maithili/ROSdemo/src /home/maithili/ROSdemo/src /home/maithili/ROSdemo/build /home/maithili/ROSdemo/build /home/maithili/ROSdemo/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

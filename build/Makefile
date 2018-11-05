@@ -42,10 +42,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maithili/demo/src
+CMAKE_SOURCE_DIR = /home/maithili/ROSdemo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maithili/demo/build
+CMAKE_BINARY_DIR = /home/maithili/ROSdemo/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -123,9 +123,9 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maithili/demo/build/CMakeFiles /home/maithili/demo/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maithili/ROSdemo/build/CMakeFiles /home/maithili/ROSdemo/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maithili/demo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maithili/ROSdemo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -296,6 +296,19 @@ listener/fast:
 .PHONY : listener/fast
 
 #=============================================================================
+# Target rules for targets named publisher
+
+# Build rule for target.
+publisher: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 publisher
+.PHONY : publisher
+
+# fast build rule for target.
+publisher/fast:
+	$(MAKE) -f random_walk/CMakeFiles/publisher.dir/build.make random_walk/CMakeFiles/publisher.dir/build
+.PHONY : publisher/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
 
 # Build rule for target.
@@ -452,6 +465,19 @@ std_msgs_generate_messages_py/fast:
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named subscriber
+
+# Build rule for target.
+subscriber: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 subscriber
+.PHONY : subscriber
+
+# fast build rule for target.
+subscriber/fast:
+	$(MAKE) -f random_walk/CMakeFiles/subscriber.dir/build.make random_walk/CMakeFiles/subscriber.dir/build
+.PHONY : subscriber/fast
+
+#=============================================================================
 # Target rules for targets named talker
 
 # Build rule for target.
@@ -492,12 +518,14 @@ help:
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... publisher"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... listener"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... subscriber"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_lisp"

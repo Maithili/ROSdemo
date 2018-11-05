@@ -35,10 +35,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maithili/demo/src
+CMAKE_SOURCE_DIR = /home/maithili/ROSdemo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maithili/demo/build
+CMAKE_BINARY_DIR = /home/maithili/ROSdemo/build
 
 # Include any dependencies generated for this target.
 include random_walk/CMakeFiles/talker.dir/depend.make
@@ -50,18 +50,18 @@ include random_walk/CMakeFiles/talker.dir/progress.make
 include random_walk/CMakeFiles/talker.dir/flags.make
 
 random_walk/CMakeFiles/talker.dir/src/random_walk_talker.cpp.o: random_walk/CMakeFiles/talker.dir/flags.make
-random_walk/CMakeFiles/talker.dir/src/random_walk_talker.cpp.o: /home/maithili/demo/src/random_walk/src/random_walk_talker.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/maithili/demo/build/CMakeFiles $(CMAKE_PROGRESS_1)
+random_walk/CMakeFiles/talker.dir/src/random_walk_talker.cpp.o: /home/maithili/ROSdemo/src/random_walk/src/random_walk_talker.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/maithili/ROSdemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object random_walk/CMakeFiles/talker.dir/src/random_walk_talker.cpp.o"
-	cd /home/maithili/demo/build/random_walk && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/talker.dir/src/random_walk_talker.cpp.o -c /home/maithili/demo/src/random_walk/src/random_walk_talker.cpp
+	cd /home/maithili/ROSdemo/build/random_walk && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/talker.dir/src/random_walk_talker.cpp.o -c /home/maithili/ROSdemo/src/random_walk/src/random_walk_talker.cpp
 
 random_walk/CMakeFiles/talker.dir/src/random_walk_talker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/talker.dir/src/random_walk_talker.cpp.i"
-	cd /home/maithili/demo/build/random_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/maithili/demo/src/random_walk/src/random_walk_talker.cpp > CMakeFiles/talker.dir/src/random_walk_talker.cpp.i
+	cd /home/maithili/ROSdemo/build/random_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/maithili/ROSdemo/src/random_walk/src/random_walk_talker.cpp > CMakeFiles/talker.dir/src/random_walk_talker.cpp.i
 
 random_walk/CMakeFiles/talker.dir/src/random_walk_talker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/talker.dir/src/random_walk_talker.cpp.s"
-	cd /home/maithili/demo/build/random_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/maithili/demo/src/random_walk/src/random_walk_talker.cpp -o CMakeFiles/talker.dir/src/random_walk_talker.cpp.s
+	cd /home/maithili/ROSdemo/build/random_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/maithili/ROSdemo/src/random_walk/src/random_walk_talker.cpp -o CMakeFiles/talker.dir/src/random_walk_talker.cpp.s
 
 random_walk/CMakeFiles/talker.dir/src/random_walk_talker.cpp.o.requires:
 .PHONY : random_walk/CMakeFiles/talker.dir/src/random_walk_talker.cpp.o.requires
@@ -79,41 +79,41 @@ talker_OBJECTS = \
 # External object files for target talker
 talker_EXTERNAL_OBJECTS =
 
-/home/maithili/demo/devel/lib/random_walk/talker: random_walk/CMakeFiles/talker.dir/src/random_walk_talker.cpp.o
-/home/maithili/demo/devel/lib/random_walk/talker: random_walk/CMakeFiles/talker.dir/build.make
-/home/maithili/demo/devel/lib/random_walk/talker: /opt/ros/indigo/lib/libroscpp.so
-/home/maithili/demo/devel/lib/random_walk/talker: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/maithili/demo/devel/lib/random_walk/talker: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/maithili/demo/devel/lib/random_walk/talker: /opt/ros/indigo/lib/librosconsole.so
-/home/maithili/demo/devel/lib/random_walk/talker: /opt/ros/indigo/lib/librosconsole_log4cxx.so
-/home/maithili/demo/devel/lib/random_walk/talker: /opt/ros/indigo/lib/librosconsole_backend_interface.so
-/home/maithili/demo/devel/lib/random_walk/talker: /usr/lib/liblog4cxx.so
-/home/maithili/demo/devel/lib/random_walk/talker: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/maithili/demo/devel/lib/random_walk/talker: /opt/ros/indigo/lib/libxmlrpcpp.so
-/home/maithili/demo/devel/lib/random_walk/talker: /opt/ros/indigo/lib/libroscpp_serialization.so
-/home/maithili/demo/devel/lib/random_walk/talker: /opt/ros/indigo/lib/librostime.so
-/home/maithili/demo/devel/lib/random_walk/talker: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/maithili/demo/devel/lib/random_walk/talker: /opt/ros/indigo/lib/libcpp_common.so
-/home/maithili/demo/devel/lib/random_walk/talker: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/maithili/demo/devel/lib/random_walk/talker: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/maithili/demo/devel/lib/random_walk/talker: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/maithili/demo/devel/lib/random_walk/talker: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/maithili/demo/devel/lib/random_walk/talker: random_walk/CMakeFiles/talker.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/maithili/demo/devel/lib/random_walk/talker"
-	cd /home/maithili/demo/build/random_walk && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/talker.dir/link.txt --verbose=$(VERBOSE)
+/home/maithili/ROSdemo/devel/lib/random_walk/talker: random_walk/CMakeFiles/talker.dir/src/random_walk_talker.cpp.o
+/home/maithili/ROSdemo/devel/lib/random_walk/talker: random_walk/CMakeFiles/talker.dir/build.make
+/home/maithili/ROSdemo/devel/lib/random_walk/talker: /opt/ros/indigo/lib/libroscpp.so
+/home/maithili/ROSdemo/devel/lib/random_walk/talker: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/maithili/ROSdemo/devel/lib/random_walk/talker: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/maithili/ROSdemo/devel/lib/random_walk/talker: /opt/ros/indigo/lib/librosconsole.so
+/home/maithili/ROSdemo/devel/lib/random_walk/talker: /opt/ros/indigo/lib/librosconsole_log4cxx.so
+/home/maithili/ROSdemo/devel/lib/random_walk/talker: /opt/ros/indigo/lib/librosconsole_backend_interface.so
+/home/maithili/ROSdemo/devel/lib/random_walk/talker: /usr/lib/liblog4cxx.so
+/home/maithili/ROSdemo/devel/lib/random_walk/talker: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/maithili/ROSdemo/devel/lib/random_walk/talker: /opt/ros/indigo/lib/libxmlrpcpp.so
+/home/maithili/ROSdemo/devel/lib/random_walk/talker: /opt/ros/indigo/lib/libroscpp_serialization.so
+/home/maithili/ROSdemo/devel/lib/random_walk/talker: /opt/ros/indigo/lib/librostime.so
+/home/maithili/ROSdemo/devel/lib/random_walk/talker: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/maithili/ROSdemo/devel/lib/random_walk/talker: /opt/ros/indigo/lib/libcpp_common.so
+/home/maithili/ROSdemo/devel/lib/random_walk/talker: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/maithili/ROSdemo/devel/lib/random_walk/talker: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/maithili/ROSdemo/devel/lib/random_walk/talker: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/maithili/ROSdemo/devel/lib/random_walk/talker: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/maithili/ROSdemo/devel/lib/random_walk/talker: random_walk/CMakeFiles/talker.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/maithili/ROSdemo/devel/lib/random_walk/talker"
+	cd /home/maithili/ROSdemo/build/random_walk && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/talker.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-random_walk/CMakeFiles/talker.dir/build: /home/maithili/demo/devel/lib/random_walk/talker
+random_walk/CMakeFiles/talker.dir/build: /home/maithili/ROSdemo/devel/lib/random_walk/talker
 .PHONY : random_walk/CMakeFiles/talker.dir/build
 
 random_walk/CMakeFiles/talker.dir/requires: random_walk/CMakeFiles/talker.dir/src/random_walk_talker.cpp.o.requires
 .PHONY : random_walk/CMakeFiles/talker.dir/requires
 
 random_walk/CMakeFiles/talker.dir/clean:
-	cd /home/maithili/demo/build/random_walk && $(CMAKE_COMMAND) -P CMakeFiles/talker.dir/cmake_clean.cmake
+	cd /home/maithili/ROSdemo/build/random_walk && $(CMAKE_COMMAND) -P CMakeFiles/talker.dir/cmake_clean.cmake
 .PHONY : random_walk/CMakeFiles/talker.dir/clean
 
 random_walk/CMakeFiles/talker.dir/depend:
-	cd /home/maithili/demo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/maithili/demo/src /home/maithili/demo/src/random_walk /home/maithili/demo/build /home/maithili/demo/build/random_walk /home/maithili/demo/build/random_walk/CMakeFiles/talker.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/maithili/ROSdemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/maithili/ROSdemo/src /home/maithili/ROSdemo/src/random_walk /home/maithili/ROSdemo/build /home/maithili/ROSdemo/build/random_walk /home/maithili/ROSdemo/build/random_walk/CMakeFiles/talker.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : random_walk/CMakeFiles/talker.dir/depend
 
